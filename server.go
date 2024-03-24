@@ -36,7 +36,7 @@ func main() {
 
 	router := gin.Default()
 
-	router.GET("/", func(c *gin.Context){
+	router.GET("/test", func(c *gin.Context){
 		c.JSON(http.StatusOK, gin.H{
 			"response": "working",
 		})
