@@ -1,0 +1,322 @@
+[
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Liverpool team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "40"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Manchester City team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "50"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Arsenal team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "42"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Aston Villa team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "66"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Tottenham team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "47"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Manchester United team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "33"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is West Ham team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "48"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Newcastle team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "34"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Brighton team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "51"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Wolves team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "39"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Chelsea team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "49"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Fulham team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "36"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Bournemouth team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "35"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Crystal Palace team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "52"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Brentford team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "55"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Everton team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "45"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Nottingham Forest team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "65"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Luton team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "1359"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Burnley team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "44"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You will be provided team IDs and player IDs, your task is to remember them and provide the ID of team or player."
+            },
+            {
+                "role": "user",
+                "content": "What is Sheffield Utd team id?"
+            },
+            {
+                "role": "assistant",
+                "content": "62"
+            }
+        ]
+    }
+]
