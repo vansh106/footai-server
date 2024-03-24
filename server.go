@@ -35,6 +35,13 @@ func main() {
 	defer db.Close()
 
 	router := gin.Default()
+
+	router.GET("/", func(c *gin.Context){
+		c.JSON(http.StatusOK, gin.H{
+			"response": "working",
+		})
+	})
+
 	router.POST("/post", func(c *gin.Context) {
 		if c.Request.Method != "POST" {
 			c.String(http.StatusMethodNotAllowed, "Method not allowed")
@@ -54,7 +61,6 @@ func main() {
 			return
 		}
 
-		// Access data
 		prompt, ok := data["prompt"].(string)
 		if !ok {
 			c.String(http.StatusBadRequest, "Missing 'name' field")
@@ -62,7 +68,6 @@ func main() {
 		}
 		// prompt = "How many points does manchester united need to get on the top of the table?"
 
-		fmt.Println("Received data:", string(requestBody))
 		res, err := Run(db, client, ctx, prompt)
 		if err != nil {
 			c.String(http.StatusBadRequest, "Couldn't perform operation!"+prompt)
@@ -95,6 +100,7 @@ func Run(db *sql.DB, client *openai.Client, ctx context.Context, prompt string) 
 	rows, err := db.Query(query)
 	if err != nil {
 		fmt.Println(err)
+		DB.StoreLog(db, "error", prompt, "", err.Error())
 		return "", err
 	}
 	defer rows.Close()
@@ -109,8 +115,13 @@ func Run(db *sql.DB, client *openai.Client, ctx context.Context, prompt string) 
 	result, err := Gpt.GenerateChat(client, ctx, DB.GenPrompt(prompt, data))
 	if err != nil {
 		fmt.Println(err)
+		DB.StoreLog(db, "error", prompt, query, err.Error())
 		return "", err
 	}
 	fmt.Println(prompt + "\n" + result)
+	err  = DB.StoreLog(db, "success", prompt, query, result)
+	if err != nil {
+		fmt.Println("[INSERTING LOGS]",err)
+	}
 	return result, nil
 }

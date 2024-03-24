@@ -76,28 +76,16 @@ func PrintAllRows(rows *sql.Rows) ([]map[string]interface{}, error) {
     return allRows, nil 
 }
 
-func StoreLog(db *sql.DB, logType string, server string, description string) error {
-	query := `
-		INSERT INTO logs (timestamp, type, server, description) 
-		VALUES ($1, $2, $3, $4) 
-	`
+func StoreLog(db *sql.DB, logType string, prompt string, query string, result string) error {
 	timestamp := time.Now().Format("2006-01-02 15:04:05")
-	_, err := db.Exec(query, timestamp, logType, server, description)
+	sql_query := `
+		INSERT INTO logs (timestamp, type, prompt, query, result) 
+		VALUES ($1, $2, $3, $4, $5) 
+	`
+	_, err := db.Exec(sql_query, timestamp, logType, prompt, query, result)
 	if err != nil {
 		return fmt.Errorf("error inserting log: %w", err)
 	}
-
-	return nil
-}
-
-func CreateSchema(db *sql.DB, schemaName string) error {
-	query := fmt.Sprintf("CREATE SCHEMA IF NOT EXISTS %s", schemaName)
-
-	_, err := db.Exec(query)
-	if err != nil {
-		return fmt.Errorf("error creating schema: %v", err)
-	}
-
-	fmt.Println("Schema created successfully (if it didn't already exist).")
+	fmt.Println("Log inserted")
 	return nil
 }
