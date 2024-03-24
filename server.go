@@ -36,13 +36,13 @@ func main() {
 
 	router := gin.Default()
 
-	router.GET("/test", func(c *gin.Context){
+	router.GET("/", func(c *gin.Context){
 		c.JSON(http.StatusOK, gin.H{
 			"response": "working",
 		})
 	})
 
-	router.POST("/post", func(c *gin.Context) {
+	router.POST("/run", func(c *gin.Context) {
 		if c.Request.Method != "POST" {
 			c.String(http.StatusMethodNotAllowed, "Method not allowed")
 			return
@@ -79,7 +79,7 @@ func main() {
 	})
 
 	fmt.Println("Server listening on port 3000")
-	log.Fatal(router.Run("0.0.0.0:3000"))
+	log.Fatal(router.Run("0.0.0.0:"+os.Getenv("PORT")))
 
 }
 
